@@ -1,0 +1,7 @@
+<div class="card bg-light">
+    <div class="card-body">
+        <h5 class="card-title">Average Bitcoin Price (€)</h5>
+        <h1 class="card-text" *ngIf="dataPresent; else noData">{{averageBitcoin | number: '1.0-2' }}</h1>
+        <ng-template #noData><h1 class="card-text">-</h1></ng-template>
+    </div>
+</div>

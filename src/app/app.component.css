@@ -1,0 +1,13 @@
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.calculator {
+    flex: 0 1 200px;
+}
+
+.bitcoin-table {
+    flex: 1 1 800px;
+    margin-top: 10px;
+}

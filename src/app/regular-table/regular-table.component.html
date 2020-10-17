@@ -1,0 +1,20 @@
+<table class="table table-striped" *ngIf="dataPresent; else noData">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Timestamp</th>
+        <th scope="col">Transaction ID</th>
+        <th scope="col">BTC Amount</th>
+        <th scope="col">Price (€)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of tableData">
+        <!-- Handling a conversion to milliseconds -->
+        <td>{{row.timestamp}}</td>
+        <td>{{row.id}}</td>
+        <td>{{row.amount}}</td>
+        <td>{{row.price}}</td> 
+      </tr>
+    </tbody>
+</table>
+<ng-template #noData><h5 class="loadingMessage">Awaiting Bitcoin Transactions...</h5></ng-template>

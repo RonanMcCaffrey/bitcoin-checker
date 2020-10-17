@@ -1,0 +1,8 @@
+.card {
+    width: 17rem;
+    margin-top: 10px;
+}
+
+.card .card-text {
+    text-align:center;
+}

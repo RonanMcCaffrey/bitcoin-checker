@@ -1,0 +1,3 @@
+<!-- Hiding table element so that it can still be found and initialised -->
+<div id="my-tabular-table" [hidden]="!dataPresent"></div>
+<h5 class="loadingMessage" *ngIf="!dataPresent;">Awaiting Bitcoin Transactions...</h5>
