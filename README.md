@@ -11,6 +11,8 @@ ng serve -o
 
 A local browser window should appear and after a few seconds, bitcoin transactions should start to appear.
 
+Alternatively, to view the app in action, simply enter: https://ronanmccaffrey.github.io/bitcoin-checker/ in your webbrowser and see it running via GitHub Pages!
+
 # Further Improvements
 Use services to handle all the Websocket implementation details
 Use Charting libraries to visualise data
