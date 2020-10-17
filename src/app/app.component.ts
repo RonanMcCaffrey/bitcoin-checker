@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
     const dateObject = new Date(milliseconds);
 
     // Prepending data to tableData array so new data appears on top by default
-    this.tableData.unshift({ timestamp: dateObject.toLocaleString('en-GB', { timeZone: 'UTC'}), 
+    this.tableData.unshift({ timestamp: dateObject.toLocaleString('en-GB'), 
                               id: data.id, 
                               amount: data.amount, 
                               price: data.price
